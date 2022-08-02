@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"  href="./asset/style.css" />
+        <title>Module 4 Challenge Webapi</title>
+    </head>
+
+    <body>
+
+        <!-- Header for high score and timer -->
+        <header class="header">
+            <button class="view-score">View Highscores</button>
+            <div> Time left: <span class="timer-count">50</span></div>
+        </header>
+
+        <main>
+            <!-- Start menu -->
+            <section id="start-quiz">
+                <h1>Coding Quiz Challenge</h1> 
+                <p>
+                    Try to answer the following code-related questions within the time limit.
+                </p>
+                <p>
+                    Wrong answers will <strong>deduct</strong> your time by 5 seconds
+                </p>
+                <p>
+                    <strong>Best of luck!</strong>
+                </p>
+                <button id="start-button">Start Quiz</button>
+            </section>
+                
+            <!-- Quiz Section w/ choices. -->
+            <section id="questionaire" class="hide">
+                <p class="prompt"></p>
+                <div class="answer">
+                    <li><button class="choice-1"></button></li>
+                    <li><button class="choice-2"></button></li>
+                    <li><button class="choice-3"></button></li>
+                    <li><button class="choice-4"></button></li>
+                </div>
+            </section>
+
+            <!-- End of the quiz w/ input to record scores -->
+            <section id="end-quiz" class="hide">
+                <h1>Congrats on finishing!</h1>
+                <p>Your score is <span class="score"></span></p>
+                <p>Enter Username: <input type="text" id="name"></p>
+                <button id="submit-button">Submit</button>
+            </section>
+
+            <!-- Highscore section.  Option to go back or clear scores included. -->
+            <section id="score-screen" class="hide">
+                <h1>Highscores</h1>
+                <ul id = "savedName">
+
+                </ul>
+                <button class="back-button">Go Back</button>
+                <button class="clear-score">Clear Highscores</button>
+            </section>
+        </main>
+
+        <script src="./asset/script.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,33 @@
+/* CSS styling for 4_Code_Quiz */
+body {
+    font-size: 30px;
+    background-color: crimson;
+
+}
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 4px;
+}
+
+section {
+    height: 75vh;
+    margin: auto;
+    margin: 15% 10% 0 10%;
+}
+
+.hide {
+    display: none;
+}
